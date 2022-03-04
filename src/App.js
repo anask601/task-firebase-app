@@ -16,9 +16,9 @@ function App() {
       for (const taskKey in taskObj) {
         loadedTasks.push({ id: taskKey, text: taskObj[taskKey].text });
       }
-
+      // console.log(text);
       setTasks(loadedTasks);
-      console.log(loadedTasks);
+      console.table(loadedTasks);
     };
 
     fetchTasks(
